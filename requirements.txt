@@ -1,8 +1,4 @@
-paddlepaddle
-paddleocr
+paddlepaddle==3.2.2
+paddleocr==3.7.0
 opencv-python
-numpy
-Pillow
 pyttsx3
-imutils
-matplotlib
