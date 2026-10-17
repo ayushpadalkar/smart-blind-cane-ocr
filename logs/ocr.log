@@ -1,0 +1,179 @@
+2026-08-05 12:36:37 | INFO     | Logger Initialized Successfully
+2026-08-05 12:36:37 | WARNING  | Warning Example
+2026-08-05 12:36:37 | ERROR    | Error Example
+2026-08-08 12:04:37 | INFO     | Initializing PaddleOCR...
+2026-08-08 12:05:48 | INFO     | PaddleOCR initialized successfully.
+2026-08-08 12:05:48 | INFO     | Starting OCR detection...
+2026-08-08 12:05:49 | ERROR    | OCR detection failed.
+Traceback (most recent call last):
+  File "C:\Users\ayush\Desktop\MJP\ocr\src\detector.py", line 90, in detect
+    results = list(self.ocr.predict(image))
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ayush\Desktop\MJP\ocr\venv\Lib\site-packages\paddleocr\_pipelines\ocr.py", line 223, in predict
+    return list(
+           ^^^^^
+  File "C:\Users\ayush\Desktop\MJP\ocr\venv\Lib\site-packages\paddlex\inference\pipelines\_parallel.py", line 161, in predict
+    yield from self._pipeline.predict(
+  File "C:\Users\ayush\Desktop\MJP\ocr\venv\Lib\site-packages\paddlex\inference\pipelines\ocr\pipeline.py", line 366, in predict
+    det_results = list(
+                  ^^^^^
+  File "C:\Users\ayush\Desktop\MJP\ocr\venv\Lib\site-packages\paddlex\inference\models\predictors\base_predictor.py", line 117, in __call__
+    yield from self.apply(input, **kwargs)
+  File "C:\Users\ayush\Desktop\MJP\ocr\venv\Lib\site-packages\paddlex\inference\models\predictors\base_predictor.py", line 140, in apply
+    pred = self.process(batch_data, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ayush\Desktop\MJP\ocr\venv\Lib\site-packages\paddlex\inference\models\text_detection\predictor.py", line 145, in process
+    batch_preds = self.runner(x=x)
+                  ^^^^^^^^^^^^^^^^
+  File "C:\Users\ayush\Desktop\MJP\ocr\venv\Lib\site-packages\paddlex\inference\models\runners\paddle_static\runner.py", line 297, in __call__
+    pred = self.infer(x)
+           ^^^^^^^^^^^^^
+  File "C:\Users\ayush\Desktop\MJP\ocr\venv\Lib\site-packages\paddlex\inference\models\runners\paddle_static\runner.py", line 265, in __call__
+    self.predictor.run()
+NotImplementedError: (Unimplemented) ConvertPirAttribute2RuntimeAttribute not support [pir::ArrayAttribute<pir::DoubleAttribute>]  (at ..\paddle\fluid\framework\new_executor\instruction\onednn\onednn_instruction.cc:118)
+
+2026-08-08 12:13:33 | INFO     | Initializing PaddleOCR...
+2026-08-08 12:13:39 | INFO     | PaddleOCR initialized successfully.
+2026-08-08 12:13:39 | INFO     | Starting OCR detection...
+2026-08-08 12:15:37 | INFO     | Initializing PaddleOCR...
+2026-08-08 12:15:39 | INFO     | PaddleOCR initialized successfully.
+2026-08-08 12:15:39 | INFO     | Starting OCR detection...
+2026-08-08 12:15:50 | INFO     | OCR completed. Results returned: 1
+2026-08-08 12:15:50 | INFO     | Valid OCR detections: 8
+2026-08-08 12:15:50 | INFO     | OCR result saved: C:\Users\ayush\Desktop\MJP\ocr\assets\output\ocr_result.jpg
+2026-08-08 12:20:15 | INFO     | TextRecognizer initialized.
+2026-08-08 12:20:15 | INFO     | Confidence filtering: 2 detections retained.
+2026-08-08 12:20:15 | INFO     | Text processing completed. Final blocks: 2
+2026-08-08 12:20:15 | INFO     | Final text length: 11 characters.
+2026-08-08 12:22:41 | INFO     | Initializing Text-to-Speech...
+2026-08-08 12:22:42 | INFO     | Text-to-Speech initialized successfully.
+2026-08-08 12:22:42 | INFO     | Speaking text: Hello. This is the Smart Blind Cane text to speech system.
+2026-08-08 12:22:48 | INFO     | Speech completed.
+2026-08-08 12:33:13 | INFO     | Initializing PaddleOCR...
+2026-08-08 12:33:15 | INFO     | PaddleOCR initialized successfully.
+2026-08-08 12:33:15 | INFO     | TextRecognizer initialized.
+2026-08-08 12:33:15 | INFO     | Initializing Text-to-Speech...
+2026-08-08 12:33:15 | INFO     | Text-to-Speech initialized successfully.
+2026-08-08 12:33:15 | INFO     | Starting OCR detection...
+2026-08-08 12:33:26 | INFO     | OCR completed. Results returned: 1
+2026-08-08 12:33:26 | INFO     | Valid OCR detections: 8
+2026-08-08 12:33:26 | INFO     | Confidence filtering: 8 detections retained.
+2026-08-08 12:33:26 | INFO     | Text processing completed. Final blocks: 8
+2026-08-08 12:33:26 | INFO     | Final text length: 284 characters.
+2026-08-08 12:33:26 | INFO     | OCR result saved: C:\Users\ayush\Desktop\MJP\ocr\assets\output\image_test_result.jpg
+2026-08-08 12:33:26 | INFO     | Speaking text: This is a lot of 12 point text to test the ocr code and see if it works on all types of file format. The quick brown dog jumped over the lazy fox. The quick brown dog jumped over the lazy fox. The quick brown dog jumped over the lazy fox. The quick brown dog jumped over the lazy fox.
+2026-08-08 12:33:48 | INFO     | Speech completed.
+2026-08-31 20:12:14 | INFO     | Initializing Smart Blind Cane OCR...
+2026-08-31 20:12:14 | INFO     | Initializing PaddleOCR...
+2026-08-31 20:12:21 | INFO     | PaddleOCR initialized successfully.
+2026-08-31 20:12:21 | INFO     | TextRecognizer initialized.
+2026-08-31 20:12:21 | INFO     | Initializing Text-to-Speech...
+2026-08-31 20:12:22 | INFO     | Text-to-Speech initialized successfully.
+2026-08-31 20:12:22 | INFO     | Smart Blind Cane OCR initialized successfully.
+2026-08-31 20:12:22 | INFO     | Starting Smart Blind Cane OCR demo.
+2026-08-31 20:12:22 | INFO     | Smart Blind Cane OCR stopped.
+2026-08-31 20:12:22 | ERROR    | Unexpected application error.
+Traceback (most recent call last):
+  File "C:\Users\ayush\Desktop\MJP\ocr\main.py", line 467, in main
+    application.run()
+  File "C:\Users\ayush\Desktop\MJP\ocr\main.py", line 347, in run
+    self.camera.start()
+  File "C:\Users\ayush\Desktop\MJP\ocr\src\camera.py", line 51, in start
+    raise RuntimeError("Unable to open camera.")
+RuntimeError: Unable to open camera.
+2026-08-31 20:13:39 | INFO     | Initializing PaddleOCR...
+2026-08-31 20:13:43 | INFO     | PaddleOCR initialized successfully.
+2026-08-31 20:13:43 | INFO     | TextRecognizer initialized.
+2026-08-31 20:13:43 | INFO     | Initializing Text-to-Speech...
+2026-08-31 20:13:43 | INFO     | Text-to-Speech initialized successfully.
+2026-08-31 20:13:43 | INFO     | Starting OCR detection...
+2026-08-31 20:13:57 | INFO     | OCR completed. Results returned: 1
+2026-08-31 20:13:57 | INFO     | Valid OCR detections: 8
+2026-08-31 20:13:57 | INFO     | Confidence filtering: 8 detections retained.
+2026-08-31 20:13:57 | INFO     | Text processing completed. Final blocks: 8
+2026-08-31 20:13:57 | INFO     | Final text length: 284 characters.
+2026-08-31 20:13:57 | INFO     | OCR result saved: C:\Users\ayush\Desktop\MJP\ocr\assets\output\image_test_result.jpg
+2026-08-31 20:13:57 | INFO     | Speaking text: This is a lot of 12 point text to test the ocr code and see if it works on all types of file format. The quick brown dog jumped over the lazy fox. The quick brown dog jumped over the lazy fox. The quick brown dog jumped over the lazy fox. The quick brown dog jumped over the lazy fox.
+2026-08-31 20:20:58 | INFO     | Initializing PaddleOCR...
+2026-08-31 20:21:02 | INFO     | PaddleOCR initialized successfully.
+2026-08-31 20:21:02 | INFO     | TextRecognizer initialized.
+2026-08-31 20:21:02 | INFO     | Initializing Text-to-Speech...
+2026-08-31 20:21:02 | INFO     | Text-to-Speech initialized successfully.
+2026-08-31 20:21:02 | INFO     | Starting OCR detection...
+2026-08-31 20:21:12 | INFO     | OCR completed. Results returned: 1
+2026-08-31 20:21:12 | INFO     | Valid OCR detections: 8
+2026-08-31 20:21:12 | INFO     | Confidence filtering: 8 detections retained.
+2026-08-31 20:21:12 | INFO     | Text processing completed. Final blocks: 8
+2026-08-31 20:21:12 | INFO     | Final text length: 44 characters.
+2026-08-31 20:21:12 | INFO     | OCR result saved: C:\Users\ayush\Desktop\MJP\ocr\assets\output\image_test_result.jpg
+2026-08-31 20:21:12 | INFO     | Speaking text: PHOTO ENFORCED STOP STOF RED RIGHT TURN ONLY
+2026-08-31 20:21:17 | INFO     | Speech completed.
+2026-09-01 15:37:38 | INFO     | Initializing PaddleOCR...
+2026-09-01 15:37:47 | INFO     | PaddleOCR initialized successfully.
+2026-09-01 15:37:47 | INFO     | TextRecognizer initialized.
+2026-09-01 15:37:47 | INFO     | Initializing Text-to-Speech...
+2026-09-01 15:37:47 | INFO     | Text-to-Speech initialized successfully.
+2026-09-01 15:37:47 | INFO     | Starting OCR detection...
+2026-09-01 15:37:59 | INFO     | OCR completed. Results returned: 1
+2026-09-01 15:37:59 | INFO     | Valid OCR detections: 8
+2026-09-01 15:37:59 | INFO     | Confidence filtering: 8 detections retained.
+2026-09-01 15:37:59 | INFO     | Text processing completed. Final blocks: 8
+2026-09-01 15:37:59 | INFO     | Final text length: 44 characters.
+2026-09-01 15:37:59 | INFO     | OCR result saved: C:\Users\ayush\Desktop\MJP\ocr\assets\output\image_test_result.jpg
+2026-09-01 15:37:59 | INFO     | Speaking text: PHOTO ENFORCED STOP STOF RED RIGHT TURN ONLY
+2026-09-01 15:38:04 | INFO     | Speech completed.
+2026-09-01 15:45:08 | INFO     | Initializing PaddleOCR...
+2026-09-01 15:45:12 | INFO     | PaddleOCR initialized successfully.
+2026-09-01 15:45:12 | INFO     | TextRecognizer initialized.
+2026-09-01 15:45:12 | INFO     | Initializing Text-to-Speech...
+2026-09-01 15:45:12 | INFO     | Text-to-Speech initialized successfully.
+2026-09-01 15:45:12 | INFO     | Starting OCR detection...
+2026-09-01 15:45:29 | INFO     | OCR completed. Results returned: 1
+2026-09-01 15:45:29 | INFO     | Valid OCR detections: 12
+2026-09-01 15:45:29 | INFO     | Confidence filtering: 12 detections retained.
+2026-09-01 15:45:29 | INFO     | Text processing completed. Final blocks: 12
+2026-09-01 15:45:29 | INFO     | Final text length: 414 characters.
+2026-09-01 15:45:29 | INFO     | OCR result saved: C:\Users\ayush\Desktop\MJP\ocr\assets\output\image_test_result.jpg
+2026-09-01 15:45:29 | INFO     | Speaking text: Cedric himself knew nothing whatever about it. It had never been even mentioned to him. He knew that his papa had been an Englishman, because his mamma had told him so; but then his papa had died when he was so little a boy that he could not remember very much about him, except that he was big, and had blue eyes and a long mustache, and that it was a splendid thing to be carried around the room on his shoulder.
+2026-09-01 15:45:56 | INFO     | Speech completed.
+2026-09-01 16:05:10 | INFO     | Initializing PaddleOCR...
+2026-09-01 16:05:17 | INFO     | PaddleOCR initialized successfully.
+2026-09-01 16:05:17 | INFO     | TextRecognizer initialized.
+2026-09-01 16:05:17 | INFO     | Initializing Text-to-Speech...
+2026-09-01 16:05:17 | INFO     | Text-to-Speech initialized successfully.
+2026-09-01 16:05:17 | INFO     | Starting OCR detection...
+2026-09-01 16:05:27 | INFO     | OCR completed. Results returned: 1
+2026-09-01 16:05:27 | INFO     | Valid OCR detections: 8
+2026-09-01 16:05:27 | INFO     | Confidence filtering: 8 detections retained.
+2026-09-01 16:05:27 | INFO     | Text processing completed. Final blocks: 8
+2026-09-01 16:05:27 | INFO     | Final text length: 44 characters.
+2026-09-01 16:05:27 | INFO     | OCR result saved: C:\Users\ayush\Desktop\MJP\ocr\assets\output\image_test_result.jpg
+2026-09-01 16:05:27 | INFO     | Speaking text: PHOTO ENFORCED STOP STOF RED RIGHT TURN ONLY
+2026-09-01 16:05:32 | INFO     | Speech completed.
+2026-09-01 16:06:10 | INFO     | Initializing PaddleOCR...
+2026-09-01 16:06:13 | INFO     | PaddleOCR initialized successfully.
+2026-09-01 16:06:13 | INFO     | TextRecognizer initialized.
+2026-09-01 16:06:13 | INFO     | Initializing Text-to-Speech...
+2026-09-01 16:06:13 | INFO     | Text-to-Speech initialized successfully.
+2026-09-01 16:06:13 | INFO     | Starting OCR detection...
+2026-09-01 16:06:23 | INFO     | OCR completed. Results returned: 1
+2026-09-01 16:06:23 | INFO     | Valid OCR detections: 8
+2026-09-01 16:06:23 | INFO     | Confidence filtering: 8 detections retained.
+2026-09-01 16:06:23 | INFO     | Text processing completed. Final blocks: 8
+2026-09-01 16:06:23 | INFO     | Final text length: 44 characters.
+2026-09-01 16:06:23 | INFO     | OCR result saved: C:\Users\ayush\Desktop\MJP\ocr\assets\output\image_test_result.jpg
+2026-09-01 16:06:23 | INFO     | Speaking text: PHOTO ENFORCED STOP STOF RED RIGHT TURN ONLY
+2026-09-01 16:06:29 | INFO     | Speech completed.
+2026-09-01 16:07:15 | INFO     | Initializing PaddleOCR...
+2026-09-01 16:07:18 | INFO     | PaddleOCR initialized successfully.
+2026-09-01 16:07:18 | INFO     | TextRecognizer initialized.
+2026-09-01 16:07:18 | INFO     | Initializing Text-to-Speech...
+2026-09-01 16:07:19 | INFO     | Text-to-Speech initialized successfully.
+2026-09-01 16:07:19 | INFO     | Starting OCR detection...
+2026-09-01 16:07:36 | INFO     | OCR completed. Results returned: 1
+2026-09-01 16:07:36 | INFO     | Valid OCR detections: 12
+2026-09-01 16:07:36 | INFO     | Confidence filtering: 12 detections retained.
+2026-09-01 16:07:36 | INFO     | Text processing completed. Final blocks: 12
+2026-09-01 16:07:36 | INFO     | Final text length: 414 characters.
+2026-09-01 16:07:36 | INFO     | OCR result saved: C:\Users\ayush\Desktop\MJP\ocr\assets\output\image_test_result.jpg
+2026-09-01 16:07:36 | INFO     | Speaking text: Cedric himself knew nothing whatever about it. It had never been even mentioned to him. He knew that his papa had been an Englishman, because his mamma had told him so; but then his papa had died when he was so little a boy that he could not remember very much about him, except that he was big, and had blue eyes and a long mustache, and that it was a splendid thing to be carried around the room on his shoulder.

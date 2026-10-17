@@ -1,0 +1,8 @@
+paddlepaddle
+paddleocr
+opencv-python
+numpy
+Pillow
+pyttsx3
+imutils
+matplotlib
